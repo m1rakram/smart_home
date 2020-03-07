@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="5dp"
+    android:background="@drawable/back10"
+    tools:context="com.example.admin.smarthomemain.GarageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forlight"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/shapebutton"
+        android:transitionName="myLightButton">
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="38dp"
+            android:src="@drawable/garage"
+            android:transitionName="myBulb"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="Garage Door"
+            android:transitionName="bulbtext"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"/>
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="38dp"
+            android:src="@drawable/garage"
+            android:transitionName="myBulb"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/forlight"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Automatic control"
+                android:textSize="30sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF" />
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manual:Closed"
+                android:textSize="30sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

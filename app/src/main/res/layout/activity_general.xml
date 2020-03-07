@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="5dp"
+    android:background="@drawable/back10"
+    tools:context="com.example.admin.smarthomemain.GeneralActivity">
+
+    <LinearLayout
+        android:id="@+id/generalview"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapebutton"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="48dp"
+            android:src="@drawable/home"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="General view"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/generalview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/generalLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shapebutton">
+        <ImageView
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:src="@drawable/sunny1"
+            android:id="@+id/generalimage"/>
+    </LinearLayout>
+
+    <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+        android:id="@+id/rangeSeekbar1"
+        android:layout_below="@id/generalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:corner_radius="3"
+        app:min_value="1"
+        app:left_thumb_color="#fdfdfd"
+        app:max_value="9"
+        app:bar_color="#fafafa"
+        app:bar_highlight_color="#998d87"/>
+</RelativeLayout>

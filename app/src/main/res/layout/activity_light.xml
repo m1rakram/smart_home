@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="5dp"
+    android:background="@drawable/back10"
+    tools:context="com.example.admin.smarthomemain.LightActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/forlight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/forlight">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/shapebutton">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:id="@+id/imagelight"
+                    android:src="@drawable/all"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="45"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shapebutton"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="27sp"
+                        android:gravity="center"
+                        android:text="2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/light21s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="27.5"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:clickable="true"
+                    android:background="@drawable/shapebutton">
+
+                    <TextView
+                        android:id="@+id/text21s"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:textSize="25sp"
+                        android:text="Left: Off"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/light22s"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="27.5"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/shapebutton">
+
+                    <TextView
+                        android:id="@+id/text22s"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:textSize="25sp"
+                        android:text="Right: Off"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="45"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shapebutton"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="27sp"
+                        android:gravity="center"
+                        android:text="3"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/light31s"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="27.5"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shapebutton">
+
+                    <TextView
+                        android:id="@+id/text31s"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:textSize="25sp"
+                        android:text="Left: Off"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/light32s"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="27.5"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/shapebutton">
+
+                    <TextView
+                        android:id="@+id/text32s"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:textSize="25sp"
+                        android:text="Right: Off"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapebutton"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/seekbar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="#FFFFFF"
+                    android:text="Light intensity:0"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:gravity="center">
+                    <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+                        android:id="@+id/rangeSeekbar3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginLeft="3dp"
+                        app:corner_radius="3"
+                        app:min_value="0"
+                        app:left_thumb_color="#fdfdfd"
+                        app:max_value="100"
+                        app:bar_color="#fafafa"
+                        app:bar_highlight_color="#998d87"
+
+                        android:layout_weight="30"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Send Intensity"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:id="@+id/send1"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/shapebutton"
+                        android:layout_weight="70"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shapebutton">
+
+                <TextView
+                    android:id="@+id/feedback"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:text="Outside brightness: 50%\nInside brightness: 50%"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/shapebutton">
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Automatic control"
+                    android:textSize="25sp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#FFFFFF" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/treshold"
+                    android:textSize="25sp"
+                    android:text="Brightness Treshold:0"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center">
+                    <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+                        android:id="@+id/rangeSeekbar4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginLeft="3dp"
+                        app:corner_radius="3"
+                        app:min_value="0"
+                        app:left_thumb_color="#fdfdfd"
+                        app:max_value="100"
+                        app:bar_color="#fafafa"
+                        app:bar_highlight_color="#998d87"
+                        android:layout_weight="30"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Send Intensity"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:id="@+id/send2"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/shapebutton"
+                        android:layout_weight="70"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forlight"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/shapebutton"
+        android:transitionName="myLightButton">
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="38dp"
+            android:src="@drawable/lightbulbicon"
+            android:transitionName="myBulb"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="Light Status"
+            android:transitionName="bulbtext"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"/>
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="38dp"
+            android:src="@drawable/lightbulbicon"
+            android:transitionName="myBulb"/>
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

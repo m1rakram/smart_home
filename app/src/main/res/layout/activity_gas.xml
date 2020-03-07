@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="5dp"
+    android:background="@drawable/back10"
+    tools:context="com.example.admin.smarthomemain.GasActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/forgas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@drawable/shapebutton">
+
+                <ImageView
+                    android:id="@+id/imagecur"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/c1"/>
+
+            </LinearLayout>
+
+
+            <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="80"
+                android:layout_gravity="center">
+                <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+                    android:id="@+id/mySeekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:max="12"
+                    android:progress="0"
+                    android:splitTrack="true"
+                    app:left_thumb_color="#fdfdfd"
+                    app:bar_color="#fafafa"
+                    app:bar_highlight_color="#998d87"
+                    app:seekBarRotation="CW270" /> <!-- Rotation: CW90 or CW270 -->
+            </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="50">
+
+
+                <LinearLayout
+                    android:id="@+id/sf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:background="@drawable/shapebutton">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Set for Second Floor"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sf3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:background="@drawable/shapebutton">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Set for Third \nFloor"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgas"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/shapebutton"
+        android:transitionName="myGasButton">
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="38dp"
+            android:src="@drawable/curtain"
+            android:transitionName="gas"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="Automatic Curtains"
+            android:transitionName="gastext"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"/>
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="38dp"
+            android:src="@drawable/curtain"
+            android:transitionName="gas"/>
+    </LinearLayout>
+
+</RelativeLayout>
